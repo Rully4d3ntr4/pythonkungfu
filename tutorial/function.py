@@ -1,17 +1,23 @@
 #!/usr/bin/env python
 
-def cetak(arg):
-    print arg;
-def tambah(arg1, arg2):
-    print arg1 + arg2;
-def kurang(arg1, arg2):
-    print  arg1 - arg2;
-def getAngkakuadrat(arg):
-    return arg **2;
-def angkaDikaliDua(arg):
-    return arg *2;
+def cetak(anu):
+	print anu;
 
-tambah(3,6);
-kurang(1,1);
-angkaGue = getAngkakuadrat(angkaDikaliDua(2));
-cetak(angkaGue);
+def tambah(arg1, arg2, arg3):
+	print arg1 + arg2 + arg3;
+
+def kurang(arg1, arg2):
+	print arg1 - arg2;
+
+def angkaKuadrat(arg):
+	return arg **2;
+
+def angkaDiKaliDua(arg):
+	return arg *2;
+
+tambah(3, 4, 3); #7
+kurang(2, 5); #-3
+angkaGue = angkaKuadrat(angkaDiKaliDua(2));
+cetak(angkaGue);	
+# smart = tambah(kurang(3, 2), 2, 2);
+# cetak(smart);	

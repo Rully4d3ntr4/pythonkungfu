@@ -14,6 +14,7 @@ beberapaAngka.append(10)
 def arrayOperation(array, operation):
     a = int(0)
     for x in xrange(0, len(array)):
+        # Handling error
         if type(array[x]) != int:
             return "The element is not a number"
         else:
@@ -25,6 +26,7 @@ def arrayOperation(array, operation):
     if(operation == "mul"):
         a = int(array[0])
         for x in xrange(1, len(array)):
+            # Handling error
             if type(array[x]) != int:
                 return "The element is not a number"
             else:
