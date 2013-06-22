@@ -1,14 +1,4 @@
 #!/usr/bin/env python
-asbak = ["Abu", "Puntung", "Sampah"]
-
-print asbak
-for i in xrange(0, len(asbak)):
-    print asbak[i]
-
-beberapaAngka = [11, 3, 7, 9]
-
-# Tambahin 10 ke dalam array beberapaAngka
-beberapaAngka.append(10)
 
 
 def arrayOperation(array, operation):
@@ -22,7 +12,7 @@ def arrayOperation(array, operation):
     if (operation == "sum"):
         return a
     if(operation == "avg"):
-        return a / len(array)
+        return float(a) / len(array)
     if(operation == "mul"):
         a = int(array[0])
         for x in xrange(1, len(array)):
@@ -35,7 +25,21 @@ def arrayOperation(array, operation):
     else:
         return "Invalid operation!"
 
-print beberapaAngka
-print "Sum = %d" % arrayOperation(beberapaAngka, "sum")
-print "Average = %.2f" % arrayOperation(beberapaAngka, "avg")
-print "Multiply = %d" % arrayOperation(beberapaAngka, "mul")
+myArray = [1, 2, 3, 4]
+
+# Tanyain dia mau ngapain?
+# 1. sum
+# 2. avg
+# 3. mul
+# --> 2
+# Tanyain, ada berapa angka yang mau dia operasiin
+# --> 4
+# array.append(angka1)
+# array.append(angka2)
+# array.append(angka3)
+# array.append(angka4)
+# print arrayOperation(myArray, "avg")
+
+print arrayOperation(myArray, "sum")
+print arrayOperation(myArray, "avg")
+print arrayOperation(myArray, "mul")

@@ -29,11 +29,17 @@ else:
     sys.exit(1);
 
 print nameFromArray;
+# for (int x = 0; x < 5; x++) {  }
 for x in xrange(0, 5):
-    nilai.append(int(raw_input("[%d] Input grade for %s: " % (x, nameFromArray))))
+    temp = int( raw_input("[%d] Input grade for %s: " % (x, nameFromArray)) );
+    # temp = int(temp);
+    nilai.append(temp);
+    # Or it can be like this
+    # nilai.append(int( raw_input("[%d] Input grade for %s: " % (x, nameFromArray)) ));
 
 total = sum(nilai);
 average = total / len(nilai);
 
 print "Total for %s: %d" % (nameFromArray, total);
+print "Nilai rata-rata %s: %d" % (nameFromArray, average);
 print "Is %s pass? %s" % (nameFromArray, amIPass(average));
