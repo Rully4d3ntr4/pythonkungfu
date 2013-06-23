@@ -20,6 +20,16 @@ This repo is dedicated for t193r Community. If you want to join with this class,
     participants/README.md
 ```
 
+Open Source is always free, so do us.
+
 Copyright:
+<<<<<<< HEAD
 (t193r Community / PT. Sagara Xinix Solusitama)
 >>>>>>> d8adb8b3dbfe8c68ad6df79c499cc97261ad1984
+=======
+
+```
+    (t193r Community / PT. Sagara Xinix Solusitama)
+```
+
+>>>>>>> ec185cf3f4f18419ad7c6c11f8a829f4e93cb67c
