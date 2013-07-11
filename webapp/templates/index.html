@@ -1,7 +1,11 @@
 <!doctype html>
 <html lang="en-US">
 <head>
+<<<<<<< HEAD
     <title>t193r Code Training</title>
+=======
+    <title>Python</title>
+>>>>>>> d47bff5a72b8f713337dc7f1cd796179d0619e7e
     <link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/padder.css') }}" />
@@ -11,6 +15,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
 </head>
 <body>
+<<<<<<< HEAD
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
@@ -53,11 +58,47 @@
         </div>
     </div>
 
+=======
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span6 well">
+                <form method="POST" action="">
+                    <fieldset>
+                        <legend>Kalkulator</legend>
+                        <label>Angka Pertama</label>
+                        <input type="text" name="angka1" placeholder="Masukkan angka pertama" />
+                        <label>Operasi</label>
+                        <select name="operasi">
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="*">*</option>
+                            <option value="/">/</option>
+                        </select>
+                        <label>Angka Kedua</label>
+                        <input type="text" name="angka2" placeholder="Masukkan angka kedua" />
+                        <label></label>
+                        <button type="submit" class="btn">Hitung</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="span6 well">
+                <h1 class="center">Hasil</h1>
+                <hr>
+                <h2 id="hasil" class="center">0.0</h2>
+            </div>
+        </div>
+    </div>
+>>>>>>> d47bff5a72b8f713337dc7f1cd796179d0619e7e
     <!-- jQuery -->
     <script src="{{ url_for('static', filename='js/jquery.min.js') }}" type="text/javascript" charset="utf-8"></script>
     <!-- Bootstrap -->
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}" type="text/javascript" charset="utf-8"></script>
     <!-- Undersore -->
     <script src="{{ url_for('static', filename='js/underscore.min.js') }}" type="text/javascript" charset="utf-8"></script>
+<<<<<<< HEAD
+=======
+    <!-- App -->
+    <script src="{{ url_for('static', filename='js/calculator.js') }}" type="text/javascript" charset="utf-8"></script>
+>>>>>>> d47bff5a72b8f713337dc7f1cd796179d0619e7e
 </body>
 </html>
